@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寻宝游戏</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="backgroundMusic" loop controls>
+        <source src="music.ogg" type="audio/ogg">
+        您的浏览器不支持音频元素。
+    </audio>
+    <div id="popup" style="display: none;">
+        <h2>请输入玩家信息</h2>
+        <input type="text" id="player-id" placeholder="玩家ID">
+        <input type="text" id="player-nickname" placeholder="昵称">
+        <button onclick="savePlayerInfo()">提交</button>
+    </div>
+    <div class='main-continer'>
+        <h1>寻宝游戏</h1>
+        <div class='information'>
+            <p>ID：<span id="player-id-display"></span></p>
+            <p>昵称：<span id="player-nickname-display"></span></p>
+            <div class='history-information'>
+                <p>历史寻宝次数：<span id="history-count"></span></p>
+                <p>历史寻宝成功率：<span id="history-success-rate"></span></p>
+            </div>
+        </div>    
+        <button id="startButton">开始寻宝</button>
+        <div id="log"></div>
+        <button id="restartButton" style="display: none;">再次寻宝</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

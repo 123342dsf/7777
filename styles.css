@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+.main-continer{
+    width: 400px;
+    margin: 0 auto;
+    background-color: rgba(5, 21, 159, 0.909);
+    padding-top: 10px;
+    margin-top: 100px;
+}
+.information p {
+    background-color: #ffffff97;
+    max-width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px; /* 设置段落之间的间隙 */
+    text-align: left; /* 确保文本左对齐 */
+    margin-left: 10px;
+}
+.history-information{
+    display:flex;
+}
+#log {
+    margin-top: 8px;
+    padding: 5px;
+    border-radius: 8px;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px; 
+    display: block;
+}
+#startButton{
+    font-size: 20px;
+    margin-top: 20px;
+}
+#restartButton{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
